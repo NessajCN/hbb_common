@@ -946,6 +946,14 @@ message TerminalResponse {
   }
 }
 
+message UsbIpCommand {
+  byte raw_command = 1;
+}
+
+message UsbIpResponse {
+  byte raw_response = 1;
+}
+
 message Message {
   oneof union {
     SignedId signed_id = 3;
@@ -978,5 +986,7 @@ message Message {
     ScreenshotResponse screenshot_response= 30;
     TerminalAction terminal_action = 31;
     TerminalResponse terminal_response = 32;
+    UsbIpCommand usb_ip_command = 33;
+    UsbIpResponse usb_ip_response = 34;
   }
 }
