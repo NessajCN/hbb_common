@@ -947,11 +947,11 @@ message TerminalResponse {
 }
 
 message UsbIpCommand {
-  byte raw_command = 1;
+  bytes raw_command = 1;
 }
 
 message UsbIpResponse {
-  byte raw_response = 1;
+  bytes raw_response = 1;
 }
 
 message Message {
